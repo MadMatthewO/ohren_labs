@@ -6,11 +6,11 @@ app.config(function($routeProvider) {
         templateUrl : "main.htm",
     })
     .when("/workHistory", {
-        templateUrl : "../work_history.html",
+        templateUrl : "views/work_history.html",
         controller : "workHistoryController"
     })
     .when("/schoolHistory", {
-        templateUrl : "../school_history.html",
+        templateUrl : "views/school_history.html",
         controller : "schoolHistoryController"
     });
 });
