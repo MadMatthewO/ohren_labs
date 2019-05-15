@@ -1,14 +1,20 @@
 <!doctype html>
-<html ng-app>
-  <head>
+<html>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-  </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </div>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+    <script src="scripts/mainController.js"></script>
+    
+    <body ng-app="myApp">
+    
+    <p><a href="#/!">Main</a></p>
+    
+    <a href="#!workHistory">Work History</a>
+    <a href="#!schoolHistory">School History</a>
+    
+    <p>Click on the links.</p>
+    
+    <p>Note that each "view" has its own controller which each gives the "msg" variable a value.</p>
+    
+    <div ng-view></div>
+  
 </html>
