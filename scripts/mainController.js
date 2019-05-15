@@ -3,12 +3,13 @@ var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "main.htm",
+        templateUrl : "/views/home.html",
     })
     .when("/workHistory", {
         templateUrl : "/views/work_history.html",
         controller : "workHistoryController"
-    })
+    });
+    $routeProvider
     .when("/schoolHistory", {
         templateUrl : "/views/school_history.html",
         controller : "schoolHistoryController"
