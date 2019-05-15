@@ -1,0 +1,13 @@
+
+    .tabsdemoCenterTabs md-tab-item {
+      min-width: 72px; }
+    @media (min-width: 960px) {
+      .tabsdemoCenterTabs md-tab-item {
+        min-width: 160px; } }
+  
+  
+  /*
+  Copyright 2018 Google LLC. All Rights Reserved. 
+  Use of this source code is governed by an MIT-style license that can be found
+  in the LICENSE file at http://material.angularjs.org/HEAD/license.
+  */
