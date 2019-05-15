@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngRoute", 'ngMaterial']);
+var app = angular.module("myApp", ["ngRoute", 'ngMaterial', 'ngMessages']);
 
 app.config(function($routeProvider) {
     $routeProvider.when("/", {
@@ -14,6 +14,14 @@ app.config(function($routeProvider) {
         controller : "schoolHistoryController"
     });
 });
+
+app.controller('AppCtrl', function($scope) {
+    $scope.title1 = 'Button';
+    $scope.title4 = 'Warn';
+    $scope.isDisabled = true;
+    $scope.googleUrl = 'http://google.com';
+  });
+
 app.controller("workHistoryController", function ($scope) {
     $scope.msg = "I love London";
 });
