@@ -1,11 +1,52 @@
 <!doctype html>
 <html>
+    <!-- AngularJS Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+  
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+
+    <!-- Custom Scripts -->
     <script src="scripts/mainController.js"></script>
     
     <body ng-app="myApp">
     
+
+
+    <div ng-cloak="">
+        <md-content>
+            <md-tabs class="md-primary" md-center-tabs="">
+            <md-tab label="one">
+                <md-content class="md-padding">
+                <h2 class="md-display-1">Tab One</h2>
+                <p class="md-body-1">
+                    Lorem 
+                </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="two">
+                <md-content class="md-padding">
+                <h2 class="md-display-1">Tab Two</h2>
+                <p class="md-body-1">
+                    Morbi 
+                </p>
+                </md-content>
+            </md-tab>
+            <md-tab label="three">
+                <md-content class="md-padding">
+                <h2 class="md-display-1">Tab Three</h2>
+                <p class="md-body-1">
+                    Integer 
+                </p>
+                </md-content>
+            </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
     <a href="#/!">Home</a>
     
     <a href="#!workHistory">Work History</a>
