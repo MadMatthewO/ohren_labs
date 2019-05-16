@@ -16,8 +16,7 @@
     opacity: 0.54; }
   
 
-    .linkTabView:hover, .linkTabView:visited, .linkTabView:link, .linkTabView:active
-{
+.linkTabView {
     font-family: Impact, Charcoal, sans-serif;
     font-size: 25px;
     letter-spacing: 2px;
