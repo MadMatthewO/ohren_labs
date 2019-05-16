@@ -34,6 +34,12 @@ text-transform: none;
 {
   color: #ff0000 ;
 }
+
+.tabSurround {
+  border: 5px groove #A40000;
+  padding: 10px;
+  border-radius: 30px;
+}
   
   /*
   Copyright 2018 Google LLC. All Rights Reserved. 
