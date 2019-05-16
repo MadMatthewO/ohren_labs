@@ -16,10 +16,17 @@
     opacity: 0.54; }
   
 
- 
+    .linkTabView:hover, .linkTabView:visited, .linkTabView:link, .linkTabView:active
+{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none solid rgb(68, 68, 68) !important;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
   
-  /*
-  Copyright 2018 Google LLC. All Rights Reserved. 
-  Use of this source code is governed by an MIT-style license that can be found
-  in the LICENSE file at http://material.angularjs.org/HEAD/license.
-  */
