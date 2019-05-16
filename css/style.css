@@ -16,7 +16,7 @@
     opacity: 0.54; }
   
 
-    a:hover, a:visited, a:link, a:active
+    .topTabs:hover, .topTabs:visited, .topTabs:link, .topTabs:active
 {
     font-family: Impact, Charcoal, sans-serif;
     font-size: 25px;
