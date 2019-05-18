@@ -7,6 +7,7 @@
         <link rel="icon" type="images/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
 
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
 
         <!-- AngularJS Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
@@ -23,17 +24,17 @@
     </head>
     
 
-    <body ng-app="myApp">
-            <div ng-controller="AppCtrl" ng-cloak="" class="buttondemoBasicUsage">
-                      <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
-                                <a class="topTabs tabSurround" href="#/!">Home</a>
-                                <a class="topTabs tabSurround" href="#!workHistory">Work History</a>
-                                <a class="topTabs tabSurround" href="#!schoolHistory">School History</a>
-                      </section>
-                  </div>
-        
-        <div ng-view></div>
+    <body ng-app="myApp" class="widthControl">
 
-        <p>Built with AngularJS framework</p>
+            <div ng-controller="AppCtrl" ng-cloak="" class="buttondemoBasicUsage">
+                <section class="tabSection" layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+                        <a class="topTabs" href="#/!">Home</a>
+                        <a class="topTabs" href="#!workHistory">Work History</a>
+                        <a class="topTabs" href="#!schoolHistory">School History</a>
+                </section>
+
+                <div class="defaultView" ng-view></div>
+
+            </div>
     </body>
 </html>

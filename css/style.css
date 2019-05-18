@@ -1,19 +1,29 @@
-.buttondemoBasicUsage section {
-  border-radius: 3px;
-  text-align: center;
-  margin: 1em;
-  position: relative !important; }
+/*
+#1A1A1D - Black/Gray
+#4e4e50 - Gray
+#6G2232 - Matte Red
+#950740 - Wine Red
+#C3073F - Blood Red
+*/
 
-.buttondemoBasicUsage section .md-button {
-  margin-top: 16px;
-  margin-bottom: 16px; }
 
-.buttondemoBasicUsage .label {
-  position: absolute;
-  bottom: 5px;
-  left: 7px;
-  font-size: 14px;
-  opacity: 0.54; }
+body.widthControl
+{
+  max-width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+
+
+.defaultView
+{
+  background: #1A1A1D; 
+  color: #ffffff;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+
 
 
 .topTabs:hover, .topTabs:visited, .topTabs:link, .topTabs:active
@@ -23,24 +33,78 @@ font-size: 25px;
 letter-spacing: 2px;
 word-spacing: 2px;
 font-weight: normal;
-color: #000000 ;
+color: #ffffff ;
 text-decoration: none solid rgb(68, 68, 68) !important;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 .topTabs:hover
 {
-  color: #ff0000 ;
+  color: #C3073F ;
 }
 
 .tabSurround {
   border: 5px groove #A40000;
   padding: 2px;
+  /*border-radius: 30px;*/
+}
+
+.tabSection
+{
+  background: #4e4e50;
+  width: 100%;
+}
+
+md-card {
+  background-color: rgb(255,255,255);
+  background-color: #4e4e50; 
+  color: #ffffff;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.cardListCurve
+{
+  border-radius: 30px !important;
+}
+
+.cardImg
+{
   border-radius: 30px;
 }
-  
+
+md-card-title
+{
+  padding: 20px;
+}
+
+md-card:hover
+{
+  background-color: #C3073F ;
+}
+
+.clickCard .md-button {
+  padding: 0 !important;
+}
+.clickCard md-card {
+  margin: 1px;
+}
+
+.customSubHead
+{
+    color: #C3073F !important;
+    text-shadow: #1A1A1D;
+}
+
+.pageTitle
+{
+  text-align: center;
+}
+
   /*
   Copyright 2018 Google LLC. All Rights Reserved. 
   Use of this source code is governed by an MIT-style license that can be found
