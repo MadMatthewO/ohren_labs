@@ -12,8 +12,10 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /*
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/images/mountain_background.jpg', sizingMethod='scale')";
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/images/mountain_background.jpg', sizingMethod='scale');
+  */
 }
 
 /*
