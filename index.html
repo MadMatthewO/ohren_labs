@@ -18,6 +18,7 @@
     
         <!-- Angular Material Library -->
         <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+        
 
         <!-- Custom Scripts -->
         <script src="scripts/mainController.js"></script>
@@ -26,7 +27,7 @@
 
     <body ng-app="myApp" class="widthControl">
 
-            <div ng-controller="AppCtrl" ng-cloak="" class="buttondemoBasicUsage">
+            <div ng-controller="AppCtrl" ng-cloak="" class="mainViewDiv">
                 <section class="tabSection" layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
                         <a class="topTabs" href="#/!">Home</a>
                         <a class="topTabs" href="#!workHistory">Work History</a>
@@ -34,7 +35,6 @@
                 </section>
 
                 <div class="defaultView bodyDiv" ng-view></div>
-                <div class="pageEnd"></div>
             </div>
     </body>
 </html>

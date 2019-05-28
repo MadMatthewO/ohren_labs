@@ -6,30 +6,47 @@
 #C3073F - Blood Red
 */
 
+html { 
+  background: url(/assets/images/mountain_background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/images/mountain_background.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/images/mountain_background.jpg', sizingMethod='scale');
+}
 
+/*
 html
 {
   background-color: #A40000;
 }
+*/
 
 body.widthControl
 {
   max-width: 80%;
   margin: auto;
   padding: 15px;
-  background-color: #A40000;
+  background-color: rgb(0,0,0,0);
 }
 
 
 .defaultView
 {
-  background: #1A1A1D; 
+  background: rgb(26, 26, 29, 0.0); 
   color: #ffffff;
   font-family: Tahoma, Geneva, sans-serif;
 }
 
 
-
+div.mainViewDiv
+{
+  background: rgb(26, 26, 29, 0.5); 
+  color: #ffffff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 120%;
+}
 
 
 .topTabs:hover, .topTabs:visited, .topTabs:link, .topTabs:active
@@ -78,12 +95,12 @@ padding-right: 10px;
 }
 
 md-card {
-  background-color: rgb(255,255,255);
   background-color: #4e4e50; 
   color: #ffffff;
   border-radius: 30px;
   width: 100%;
-  box-shadow: 0pc
+  box-shadow: 0pc;
+  opacity: 0.5;
 }
 
 .cardListCurve
@@ -104,6 +121,7 @@ md-card-title
 md-card:hover
 {
   background-color: #C3073F ;
+  opacity: 1;
 }
 
 .clickCard .md-button {
@@ -144,6 +162,8 @@ md-card:hover
 {
   padding: 10px;
 }
+
+
 
   /*
   Copyright 2018 Google LLC. All Rights Reserved. 
