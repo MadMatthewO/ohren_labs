@@ -25,16 +25,14 @@
     </head>
     
 
-    <body ng-app="myApp" class="widthControl">
+    <body ng-app="myApp" ng-controller="AppCtrl"  class="widthControl">
 
-            <div ng-controller="AppCtrl" ng-cloak="" class="mainViewDiv">
-                <section class="tabSection" layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
-                        <a class="topTabs" href="#/!">Home</a>
-                        <a class="topTabs" href="#!workHistory">Work History</a>
-                        <a class="topTabs" href="#!schoolHistory">School History</a>
-                </section>
+        <div class="navigationDiv">
+            <a class="topTabs" href="#/!">Home</a>
+            <a class="topTabs" href="#!workHistory">Work History</a>
+            <a class="topTabs" href="#!schoolHistory">School History</a>
+        </div>
 
-                <div class="defaultView bodyDiv" ng-view></div>
-            </div>
+        <div class="defaultView bodyDiv" ng-view></div>
     </body>
 </html>
