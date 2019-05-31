@@ -26,13 +26,15 @@
     
 
     <body ng-app="myApp" ng-controller="AppCtrl"  class="widthControl">
-
-        <div class="navigationDiv">
-            <a class="topTabs" href="#/!">Home</a>
-            <a class="topTabs" href="#!workHistory">Work History</a>
-            <a class="topTabs" href="#!schoolHistory">School History</a>
+        <div class="firstPhoto">
+            <div class="navigationDiv">
+                <a class="topTabs" href="#/!">Home</a>
+                <a class="topTabs" href="#!workHistory">Work History</a>
+                <a class="topTabs" href="#!schoolHistory">School History</a>
+                <hr />
+            </div>
+            
+            <div class="defaultView bodyDiv" ng-view></div>
         </div>
-
-        <div class="defaultView bodyDiv" ng-view></div>
     </body>
 </html>
