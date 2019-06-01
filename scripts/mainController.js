@@ -13,6 +13,11 @@ app.config(function($routeProvider) {
         templateUrl : "/views/school_history.html",
         controller : "schoolHistoryController"
     });
+    $routeProvider
+    .when("/pokedex", {
+        templateUrl : "/views/pokedex.html",
+        controller : "pokedexController"
+    });
 });
 
 app.controller('AppCtrl', function($scope) {
@@ -20,6 +25,8 @@ app.controller('AppCtrl', function($scope) {
     $scope.title4 = 'Warn';
     $scope.isDisabled = true;
     $scope.googleUrl = 'http://google.com';
+
+
   });
 
 app.controller("workHistoryController", function ($scope) {
@@ -27,4 +34,28 @@ app.controller("workHistoryController", function ($scope) {
 });
 app.controller("schoolHistoryController", function ($scope) {
     $scope.msg = "I love Paris";
+});
+
+app.controller("pokedexController", function ($scope, $http) {
+    $scope.msg = "I love Paris";
+    $scope.testVariable = "";
+    $scope.shinyPath = "";
+    $scope.pokeName = "";
+
+    $scope.getRequest = function() 
+    {
+        
+        $http.get("https://pokeapi.co/api/v2/pokemon/"+ $scope.pokeName +"/").then(
+          function successCallback(response) 
+          {
+            console.log(response);
+            $scope.testVariable = response.data.sprites.front_default;
+            $scope.shinyPath = response.data.sprites.front_shiny;
+          }, 
+          function errorCallback(response) 
+          {
+            console.log(response);
+          }
+        );
+    };
 });
