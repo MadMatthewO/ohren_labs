@@ -1,0 +1,26 @@
+<md-dialog aria-label="My Dialog">
+    <md-dialog-content class="sticky-container">
+        <div class="grid-container">
+            <div class="item1">Header</div>
+            <div class="item2">
+                    <input ng-model="pokeName">
+                    <button ng-click="getRequest()">Search For Pokemon</button>
+                    <table id="searchTextResults">
+                            <tr ng-show="pokeName" ng-repeat="pokemon in pokemonList | filter : pokeName">
+                              <td>{{pokemon}}</td>
+                            </tr>
+                          </table>
+            </div>
+            <div class="item3">
+                <img ng-show="selectedPokemom.sprites.front_default" src="{{selectedPokemom.sprites.front_default}}" alt="Missing Image"/>
+            </div>  
+            <div class="item4">Right</div>
+            <div class="item5">{{selectedPokemom.pokemonDesc}}</div>
+        </div>
+
+        
+        
+
+    </md-dialog-content>
+    <md-button ng-click=close()>Close</md-button>
+</md-dialog>

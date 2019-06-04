@@ -223,6 +223,44 @@ img.shinyPoke
   background-color: transparent;
   transform: rotateY(180deg);
 }
+
+.item1 { 
+  grid-area: header; 
+}
+.item2 { 
+  grid-area: menu;
+  height: 150px;
+  width: 375px;
+ }
+.item3 { 
+  grid-area: main;
+  height: 150px;
+  width: 375px;
+}
+.item4 { 
+  grid-area: right;
+  height: 150px;
+  width: 375px;
+}
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'menu main right'
+    'menu footer footer';
+  grid-gap: 10px;
+  background-color: rgb(185, 0, 0);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
   /*
   Copyright 2018 Google LLC. All Rights Reserved. 
   Use of this source code is governed by an MIT-style license that can be found
