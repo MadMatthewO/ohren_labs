@@ -83,6 +83,22 @@ padding: 15px;
 padding-top: 30px;
 }
 
+.dexTab
+{
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: normal;
+  color: #ffffff ;
+  text-decoration: none solid rgb(68, 68, 68) !important;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding: 15px;
+  padding-top: 30px;
+  }
+
 .topTabs:hover
 {
   color: #C3073F ;
@@ -231,6 +247,7 @@ img.shinyPoke
   grid-area: menu;
   height: 150px;
   width: 375px;
+  overflow-y: scroll;
  }
 .item3 { 
   grid-area: main;
