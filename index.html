@@ -21,17 +21,22 @@
         
 
         <!-- Custom Scripts -->
-        <script src="scripts/mainController.js?v=1.0.5"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/mainController.js"></script>
+        <script src="scripts/schoolHistoryController.js"></script>
+        <script src="scripts/workHistoryController.js"></script>
+        <script src="scripts/dialogs/pokedexController.js"></script>
+        
     </head>
     
 
-    <body ng-app="myApp" ng-controller="AppCtrl" class="widthControl">
+    <body ng-app="app" ng-controller="MainController as ctrl" class="widthControl">
         <div class="firstPhoto">
             <div class="navigationDiv">
                 <a class="topTabs" href="#/!">Home</a>
                 <a class="topTabs" href="#!workHistory">Work History</a>
                 <a class="topTabs" href="#!schoolHistory">School History</a>
-                <a ng-click="openDialog()" class="topTabs dexTab">Pok&#233dex</a>
+                <a ng-click="ctrl.openDialog()" class="topTabs dexTab">Pok&#233dex</a>
                 <hr />
             </div>
 

@@ -1,28 +1,28 @@
-<md-dialog aria-label="My Dialog">
+<md-dialog aria-label="My Dialog" ng-controller="PokedexController as ctrl">
         <div class="grid-container sticky-container">
             <div class="item1">POK&#233DEX</div>
             <div class="item2">
                 <table>
-                    <tr ng-repeat="pokemon in pokemonList | filter : pokeFilter">
-                        <td class="center" ng-click="getPokemonId(pokemon)">{{pokemon}}</td>
+                    <tr ng-repeat="pokemon in ctrl.pokemonList | filter : ctrl.pokeFilter">
+                        <td class="center" ng-click="ctrl.getPokemonId(pokemon)">{{pokemon}}</td>
                     </tr>
                 </table>
             </div>
             <div class="item3">
-                <img ng-show="mainSpriteUrl" ng-mouseover="shinySwitch()" ng-mouseleave="defaultSwitch()" src="{{mainSpriteUrl}}" alt="Missing Image"/>
+                <img ng-show="ctrl.mainSpriteUrl" ng-mouseover="ctrl.shinySwitch()" ng-mouseleave="ctrl.defaultSwitch()" src="{{ctrl.mainSpriteUrl}}" alt="Missing Image"/>
             </div>  
                 <div class="item4">
-                    {{selectedPokemon.types[0].type.name}}
-                    {{selectedPokemon.types[1].type.name}}
-                    {{selectedPokemon.types[2].type.name}}
+                    {{ctrl.selectedPokemon.types[0].type.name}}
+                    {{ctrl.selectedPokemon.types[1].type.name}}
+                    {{ctrl.selectedPokemon.types[2].type.name}}
                 </div>
-            <div class="item5">{{selectedPokemon.pokemonDesc}}</div>
+            <div class="item5">{{ctrl.selectedPokemon.pokemonDesc}}</div>
         </div>
         <div ng-show="0">                    
-            <input ng-model="pokeName">
-            <button ng-click="getRequest()">Search For Pokemon</button>
+            <input ng-model="ctrl.pokeName">
+            <button ng-click="ctrl.getRequest()">Search For Pokemon</button>
         </div>
         
         
-    <md-button ng-click=close()>Close</md-button>
+    <md-button ng-click="ctrl.close()">Close</md-button>
 </md-dialog>
